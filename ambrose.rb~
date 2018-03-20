@@ -1,0 +1,6 @@
+blue_crystal = 1
+leaf_tender = 5
+
+pipe.catch_a_star
+
+captive_star = pipe.catch_a_star
