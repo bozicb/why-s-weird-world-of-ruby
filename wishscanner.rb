@@ -7,3 +7,8 @@ module WishScanner
     wish.gsub('wish: ','')
   end
 end
+
+require 'mindreader'
+class MindReader
+  include WishScanner
+end
