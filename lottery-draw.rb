@@ -1,3 +1,5 @@
+require_relative 'lottery-ticket'
+
 class LotteryDraw
   @@tickets={}
   def LotteryDraw.buy(customer,*tickets)
