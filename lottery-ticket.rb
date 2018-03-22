@@ -12,6 +12,13 @@ class LotteryTicket
     @picks=picks
     @purchased=Time.now
   end
+  def score(final)
+    count=0
+    final.picks.each do |note|
+      count+=1 if picks.include? note
+    end
+    count
+  end
   def self.new_random
     new(rand(25)+1,rand(25)+1,rand(25)+1)
   rescue ArgumentError
